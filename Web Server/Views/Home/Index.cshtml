@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Latency App</h1>
+    </div>
+    <br />
+    <div class="text-center">
+        <h2>Model</h2>
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            <section>
+                <div>
+                    <input type="radio" name="modelradio" value="I" />  I Model
+                </div>
+                <div>
+                    <input type="radio" name="modelradio" value="H" />  H Model
+                </div>
+                <div>
+                    <input type="radio" name="modelradio" value="Both" /> Compare
+                </div>
+            </section>
+            <br />
+            <section>
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </section>
+        }
+    </div>
+<br />
+<hr noshade />
+    <div class="text-center"; style="overflow-x:auto">
+        <h2>Response Time</h2>
+        @if (@ViewBag.flagvalue)
+        {
+        <h5>@ViewBag.text @ViewBag.result ms.</h5>
+        <br />
+        <table border="1"; align="center">
+            <tr>
+                <th>Source Server</th>
+                <th>Destination Server</th>
+                <th>Trip(ms)</th>
+            </tr>
+            <tr>
+                <td>Internet Web Server</td>
+                <td>Internet DB Server</td>
+                <td>@ViewBag.internetTrip</td>
+            </tr>
+            <tr>
+                <td>Internet Web Server</td>
+                <td>Intranet DB Server</td>
+                <td>@ViewBag.intranetTrip</td>
+            </tr>
+        </table>
+        }
+    </div>
+
+<br />
+<hr noshade />
+<div class="text-center"; style="overflow-x:auto">
+    <h3>How latency is calculated?</h3>
+    <p>The latency is computed by using unix timestamp. When user hit "SUBMIT", web server will get current unix timestamp.</p>
+    <p>The request will then send to App Server, and hit database to get DB Server current unix timestamp (as simple database transaction).</p>
+    <p>Another unix timestamp is retrieved to get current unix  timestamp when request is completed. Latency is computed based on the differences between this unix timestamp and the first unix timestamp.</p>
+</div>
+
+

@@ -4,7 +4,7 @@ Web server uses ASP.NET Core 3 Preview.
 ### Setup (Development machine)
 The solution is compiled and dockerized. Setup detail is similar to App Server. The development is in Windows environment, and uses Linux container in Docker.
 
-The following docker command is to compile and push container images to [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/).
+The following docker command in Command Prompt is to compile and push container images to [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/).
 
 ```cmd
 cd <folder location>

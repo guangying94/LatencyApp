@@ -8,8 +8,8 @@ Alternatively, you can run the script below.
 
 ```sh
 #Download script
-wget https://raw.githubusercontent.com/guangying94/LatencyApp/master/Integration%20Server/api-umbrella.sh
-sudo sh api-umbrella.sh
+$ wget https://raw.githubusercontent.com/guangying94/LatencyApp/master/Integration%20Server/api-umbrella.sh
+$ sudo sh api-umbrella.sh
 ```
 
 ### Setup

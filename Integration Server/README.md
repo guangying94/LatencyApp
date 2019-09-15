@@ -1,5 +1,5 @@
 # Integration Server
-Integration Server act is a gateway for cross-zone communication. In this sample, we use open source API Gateway - [API Umbrella](https://apiumbrella.io/).
+Integration Server act as a gateway for cross-zone communication. In this sample, we use open source API Gateway - [API Umbrella](https://apiumbrella.io/).
 
 ### Installation
 The installation is easy in Ubuntu, full setup can be found [here](https://api-umbrella.readthedocs.io/en/latest/getting-started.html).

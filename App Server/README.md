@@ -24,7 +24,7 @@ sudo docker login <acr address>.azurecr.io -u <Username> -p <Password>
 #To build container image
 sudo docker build -t internet-app .
 
-#To label contrainer image
+#To tag contaniner image
 sudo docker tag internet-app <acr address>.azurecr.io/internet-app
 
 #To push container image to ACR

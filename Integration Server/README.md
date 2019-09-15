@@ -7,12 +7,13 @@ The installation is easy in Ubuntu, full setup can be found [here](https://api-u
 Alternatively, you can run the script below.
 
 ```sh
-wget
+#Download script
+wget https://raw.githubusercontent.com/guangying94/LatencyApp/master/Integration%20Server/api-umbrella.sh
 sudo sh api-umbrella.sh
 ```
 
 ### Setup
-For first usage, admin will need to create an account. Account creation can be done in <ip address>/admin.
+For first usage, admin will need to create an account. Account creation can be done in [IP Address]/admin.
 
 Process to register API in API Umbrella is simple. You will need to give your API a name, the frontend and backend server that the api gateway is listening to, and advance settings such as url-rewriting, modify web request etc(if required).
 

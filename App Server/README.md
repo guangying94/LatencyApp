@@ -8,7 +8,7 @@ There are many ways to install Docker in Ubuntu. One of the option is to use scr
 To simplify the deployment, store the command in install-docker.sh, and run the script.
 
 ```sh
-wget 
+wget https://raw.githubusercontent.com/guangying94/LatencyApp/master/App%20Server/install-docker.sh
 sudo sh install-docker.sh
 ```
 

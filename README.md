@@ -30,3 +30,8 @@ This sample leverage on [Azure SQL Database](https://azure.microsoft.com/en-us/s
 
 ### Demo
 Demo site can be found [here](http://latency.tgynow.com/).
+
+![Latency](./latency.png)
+
+### Extra
+To setup the infrastructure, there's a sample repository created, which leverages on [Terraform](https://www.terraform.io/). The repository can be located [here](https://github.com/guangying94/IaC-Terraform).
